@@ -115,7 +115,7 @@ function cuentregret(numero){
         cuentregret(numero);
         }
         else{
-        console.log("Feliz Jueves");
+        console.log("Feliz Jueves");  
         }
         }
         function broli(a){
