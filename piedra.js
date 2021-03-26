@@ -155,3 +155,45 @@ function swap_text(s){
     }
 }
 console.log(swap_text("HOLA"))
+
+// Esto es un array con objetos que tienen propiedades
+var lista = [
+    {nombre:"banana", costo:20},
+    {nombre:"tablet", costo: 150},
+    {nombre:"huevos", costo:3},
+    {nombre:"kukitan", costo:20},
+    {nombre:"RAM", costo:50},
+    {nombre:"platzi", costo:20},
+    {nombre:"kuki", costo:10}
+    ];
+    
+    // La funcion filter permite filtrar objetos segun los datos de sus propiedades y las muestra en un nuevo array
+    var kk = lista.filter(function(articulo){
+    return articulo.costo <= 100});
+   
+    // Funcion map saca una propiedad los onjetos y los muestra en nuevo array con strings
+    var liston = lista.map(function(daigual){return daigual.nombre});
+   
+    // function find devuelve el primer objeto del array que cumple con lo que se pide
+    var tumama = lista.find(function(daigual){return daigual.nombre === "kukitan"});
+    
+    //function forEach sin crear un nuevo array filtra el dato que quieres obtener d los objetos, si solicita otro filtro (<50 ejemplo) devuelve la veracidad del filtro de la caracteristica de todos los objetos
+    lista.forEach(function(daigual){ console.log(daigual.costo < 50)});
+    //Function some establece si existe un objeto con las caracteristica descrita solo muestra true or false pero no el valor
+    var yes = lista.some(function(daigual){return daigual.costo <= 50 });
+//Añadir y elim inar elementos de un array
+        //Al final y al inico
+        lista.push ({nombre:"John", costo:50})    //final
+        lista.unshift ({nombre:"John", costo:50}) //inicio
+        //nombre del array.push/unshift y lo que quieres añadir
+        let shiftlista = lista.shift() //inicio
+        let shiftlista = lista.pop()   //final
+        // nueva variable shiftnombredel array = nombredelarray.pop/shift para eliminar el ultimo
+
+        var articulos = ['carro', 'celular', 'moto', 'tv', 'libro']; //eliminar moto
+
+lista.splice(2, 1); //el primer parámetro especifica el índice del elemento que quiero eliminar, en este caso es moto
+//y el segundo parámetro especifica cuantos elementos del arreglo quiero eliminar, en este caso solo uno que es moto
+//['carro', 'celular', 'tv', 'libro']
+lista.splice(2, 1 "tumama");
+//tambien lo puede modificar de esta forma
