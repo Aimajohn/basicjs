@@ -197,3 +197,4 @@ lista.splice(2, 1); //el primer parámetro especifica el índice del elemento qu
 //['carro', 'celular', 'tv', 'libro']
 lista.splice(2, 1 "tumama");
 //tambien lo puede modificar de esta forma
+//pues a la wea esto
